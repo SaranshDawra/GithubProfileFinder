@@ -16,7 +16,8 @@ searchButton.addEventListener('click', (e) => {
             if(data.profile.message === 'Not Found'){
                 ui.showAlert('User not found', 'alert alert-danger');
             } else {
-                ui.showProfile(data.profile)
+                ui.showProfile(data.profile);
+                ui.showRepos(data.repo);
             }
         });
     }
